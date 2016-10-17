@@ -1,0 +1,7 @@
+<h1>Welcome to the Amusement Park!</h1>
+
+<% if signed_in? %>
+  <p><%= link_to "Log Out", signout_path %></p>
+<% else %>
+  <p><%= link_to "Sign in", signin_path %> | <%= link_to "Sign up", new_user_path %></p> 
+<% end %>
